@@ -1,46 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('bg1.jpg');
+    font-family: Arial;
+}
 
-            body {
-            margin: 0;
-            background-image: url('bg1.jpg');
-            font-family: Arial;
-        }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            border-bottom: 1px solid black;
-        }
+.nav {
+    display: flex;
+    gap: 15px;
+    font-family: niconne;
+}
 
-        .logo img {
-            height: 40px;
-        }
+.nav a {
+    text-decoration: none;
+    color: black;
+}
 
-        .nav {
-            display: flex;
-            gap: 15px;
-        }
+.nav a:hover {
+    text-decoration: underline;
+}
 
-        .nav a {
-            text-decoration: none;
-            color: black;
-        }
+.main {
+    flex: 1;
+    padding: 40px;
+}
 
-        .main {
-            height: 400px;
-            border-bottom: 1px solid black;
-        }
+.logo img {
+    height: 40px;
+}
 
-        .footer {
-            display: flex;
-            justify-content: space-around;
-            padding: 15px;
-        }
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-top: 1px solid black;
+    font-family: niconne;
+}
 
-        .socials {
-            border: 1px solid black;
-            padding: 5px 10px;
-            text-decoration: none;
-            color: black;
-        }
+.socials {
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.techstack {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.about {
+    padding: 40px;
+}
+
+@font-face {
+    font-family: ardhita;
+    src: url("fonts/Ardhita.ttf");
+}
+
+@font-face {
+    font-family: niconne;
+    src: url("fonts/Niconne-Regular.ttf");
+}
+
+@font-face {
+    font-family: angelica;
+    src: url("fonts/angelica.ttf");
+}
+
+@font-face {
+    font-family: starshine;
+    src: url("fonts/starshine.otf");
+}
+
+@font-face {
+    font-family: arimo;
+    src: url("fonts/arimo.ttf");
+}
+
+p {
+    font-family: arimo;
+}
+
+h1 {
+    font-family: niconne;
+}
+
+h2 {
+    font-family: ardhita;
+}
