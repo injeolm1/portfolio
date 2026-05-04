@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anaiah Kyrie Pinalba | Web Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anaiah Kyrie Pinalba | Web Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans">
 
-    <div class="header">
-       
+  <!-- Header -->
+  <header class="flex justify-between items-center px-[25px] py-[15px] backdrop-blur-md border-b border-black/10">
+    <nav class="ml-auto flex gap-[15px] text-[25px]">
+      <a href="index.html"
+         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
+                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
+        Home
+      </a>
+      <a href="about.html"
+         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
+                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
+        About Me
+      </a>
+      <a href="techs.html"
+         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
+                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
+        Tech Stack
+      </a>
+      <a href="certs.html"
+         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
+                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
+        Certifications
+      </a>
+      <a href="contacts.html"
+         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
+                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
+        Contact
+      </a>
+    </nav>
+  </header>
 
-      <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="techs.html">Tech Stack</a>
-            <a href="certs.html">Certifications</a>
-            <a href="contacts.html">Contact</a>
-        </nav>
-    </div>
+  <!-- Main -->
+  <main class="flex-1 w-[90%] max-w-[1000px] mx-auto mt-[100px] mb-[40px] p-[50px]
+               bg-[rgba(95,133,117,0.7)] backdrop-blur-md rounded-[20px]
+               shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
 
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-[40px]">
 
-    <div class="main">
-         <div class="content-box">
-
-            <div class="about">
-
-
-                <div class="text">
-
-                    <h1>Get to know me</h1>
-
-                    <p>
-                        I’m a 2nd year BSIT student currently building my skills both academically and through experience.
-                        I’ve worked with different people in school activities, which helped me improve how I communicate
-                        and collaborate with others. I try to stay responsible with my tasks and manage my time well,
-                        especially when balancing multiple requirements. I’m still learning and improving, and I’m open
-                        to feedback and new experiences that can help me grow.
-                    </p>
-
-                    <p>
-                        I have experience in programming and databases through my coursework. I’ve worked on C programming
-                        exercises in CodeChum and used SQL for basic database creation and management. I’ve also applied
-                        basic web development skills in projects using HTML, CSS, and JavaScript.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+      <!-- Text -->
+      <div class="flex-1 text-center md:text-left">
         
+        <h1 class="text-[rgb(53,94,59)] bg-[rgb(255,171,171)] inline-block
+                   px-[20px] py-[9px] rounded-[50px]
+                   shadow-[0_6px_0_rgb(220,140,140),0_10px_18px_rgba(0,0,0,0.15)]
+                   -translate-y-[2px] text-2xl font-bold mb-4">
+          Get to know me
+        </h1>
+
+        <p class="mb-4 leading-relaxed">
+          I’m a 2nd year BSIT student currently building my skills both academically and through experience.
+          I’ve worked with different people in school activities, which helped me improve how I communicate
+          and collaborate with others. I try to stay responsible with my tasks and manage my time well,
+          especially when balancing multiple requirements. I’m still learning and improving, and I’m open
+          to feedback and new experiences that can help me grow.
+        </p>
+
+        <p class="leading-relaxed">
+          I have experience in programming and databases through my coursework. I’ve worked on C programming
+          exercises in CodeChum and used SQL for basic database creation and management. I’ve also applied
+          basic web development skills in projects using HTML, CSS, and JavaScript.
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
 
 </body>
 </html>
