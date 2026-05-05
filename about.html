@@ -7,75 +7,93 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans">
+<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center px-[25px] py-[15px] backdrop-blur-md border-b border-black/10">
-    <nav class="ml-auto flex gap-[15px] text-[25px]">
-      <a href="index.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Home
-      </a>
-      <a href="about.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        About Me
-      </a>
-      <a href="techs.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Tech Stack
-      </a>
-      <a href="certs.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Certifications
-      </a>
-      <a href="contacts.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Contact
-      </a>
-    </nav>
+<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+            bg-white/10
+            backdrop-blur-xl backdrop-saturate-150
+            border border-white/25
+            rounded-[16px]
+            shadow-[0_0_70px_rgba(255,179,198,0.30)]
+            overflow-hidden flex flex-col">
+
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+          style="background-image: url('icons/bgs/bg1.png');">
   </header>
 
-  <!-- Main -->
-  <main class="flex-1 w-[90%] max-w-[1000px] mx-auto mt-[100px] mb-[40px] p-[50px]
-               bg-[rgba(95,133,117,0.7)] backdrop-blur-md rounded-[20px]
-               shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
+  <div class="flex flex-col md:flex-row">
 
-    <div class="flex flex-col md:flex-row items-center md:items-start gap-[40px]">
+    <aside class="w-full md:w-[260px] p-4 md:p-5
+                  bg-white/10 backdrop-blur-xl
+                  border-b md:border-b-0 md:border-r border-white/20">
 
-      <!-- Text -->
-      <div class="flex-1 text-center md:text-left">
-        
-        <h1 class="text-[rgb(53,94,59)] bg-[rgb(255,171,171)] inline-block
-                   px-[20px] py-[9px] rounded-[50px]
-                   shadow-[0_6px_0_rgb(220,140,140),0_10px_18px_rgba(0,0,0,0.15)]
-                   -translate-y-[2px] text-2xl font-bold mb-4">
-          Get to know me
-        </h1>
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+        Navigation
+      </h2>
 
-        <p class="mb-4 leading-relaxed">
-          I’m a 2nd year BSIT student currently building my skills both academically and through experience.
-          I’ve worked with different people in school activities, which helped me improve how I communicate
-          and collaborate with others. I try to stay responsible with my tasks and manage my time well,
-          especially when balancing multiple requirements. I’m still learning and improving, and I’m open
-          to feedback and new experiences that can help me grow.
+      <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
+
+        <a href="index.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Home
+        </a>
+
+        <a href="about.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          About Me
+        </a>
+
+        <a href="techs.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Tech Stack
+        </a>
+
+        <a href="certs.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Certifications
+        </a>
+
+        <a href="contacts.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Contact
+        </a>
+
+      </nav>
+
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
+                 shadow-md mb-6">
+        About Me
+      </h1>
+
+      <div class="max-w-[750px] mx-auto text-center">
+
+
+        <p class="mb-4 text-sm md:text-base leading-relaxed">
+           I enjoy creativity and anything visually interesting, and I like finding simple ways to express ideas. I am a 2nd year BSIT student with experience in C programming, HTML, CSS, Java, and basic database concepts.
         </p>
 
-        <p class="leading-relaxed">
-          I have experience in programming and databases through my coursework. I’ve worked on C programming
-          exercises in CodeChum and used SQL for basic database creation and management. I’ve also applied
-          basic web development skills in projects using HTML, CSS, and JavaScript.
+        <p class="mb-4 text-sm md:text-base leading-relaxed">
+          In the future, I aim to work and find my path in the IT field. I hope to bring creativity into the projects I work on while continuing to improve my skills. I am open to learning, gaining experience, and exploring internship opportunities. I want to keep growing in a way that is both meaningful and nice.
         </p>
 
       </div>
 
-    </div>
+    </main>
 
-  </main>
+  </div>
+
+</div>
+
 
 </body>
 </html>

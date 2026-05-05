@@ -7,6 +7,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<title>Anaiah Kyrie Pinalba | Web Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
@@ -28,46 +31,38 @@
                   bg-white/10 backdrop-blur-xl
                   border-b md:border-b-0 md:border-r border-white/20">
 
-      <div class="flex justify-between items-center md:block">
-        <h2 class="text-lg font-bold text-[#ff6f91] border-b border-white/20 pb-2">
-          Navigation
-        </h2>
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+        Navigation
+      </h2>
 
-        <button onclick="toggleMenu()"
-                class="md:hidden bg-[#ffb3c6] px-3 py-2 rounded-lg text-sm">
-          Menu
-        </button>
-      </div>
-
-      <nav id="mobileMenu"
-           class="hidden md:flex flex-col gap-3 md:gap-4 mt-3 md:mt-0">
+      <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
 
         <a href="index.html"
-           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Home
         </a>
 
         <a href="about.html"
-           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           About Me
         </a>
 
         <a href="techs.html"
-           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Tech Stack
         </a>
 
         <a href="certs.html"
-           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Certifications
         </a>
 
         <a href="contacts.html"
-           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Contact
         </a>
@@ -110,14 +105,6 @@
   </div>
 
 </div>
-
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("hidden");
-}
-</script> 
-
 
 </body>
 </html>
