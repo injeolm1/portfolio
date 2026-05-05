@@ -4,24 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anaiah Kyrie Pinalba | Web Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
- <div class="header">
+<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+            bg-white/10
+            backdrop-blur-xl backdrop-saturate-150
+            border border-white/25
+            rounded-[16px]
+            shadow-[0_0_70px_rgba(255,179,198,0.30)]
+            overflow-hidden flex flex-col">
 
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="techs.html">Tech Stack</a>
-            <a href="certs.html">Certifications</a>
-            <a href="contacts.html">Contact</a>
-        </nav>
-    </div>
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+          style="background-image: url('icons/bgs/bg1.png');">
+  </header>
 
-    <div class="main">
-        <h1>Get In Touch</h1>
-    </div>
+  <div class="flex flex-col md:flex-row">
+
+    <aside class="w-full md:w-[260px] p-4 md:p-5
+                  bg-white/10 backdrop-blur-xl
+                  border-b md:border-b-0 md:border-r border-white/20">
+
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+        Navigation
+      </h2>
+
+      <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
+
+        <a href="index.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Home
+        </a>
+
+        <a href="about.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          About Me
+        </a>
+
+        <a href="techs.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Tech Stack
+        </a>
+
+        <a href="certs.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Certifications
+        </a>
+
+        <a href="contacts.html"
+           class="flex-shrink-0 md:flex-shrink bg-[#ff6f91] text-white text-center py-2 px-4 md:py-3 rounded-xl
+                  text-[14px] md:text-[16px]">
+          Contact
+        </a>
+
+      </nav>
+
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
+                 shadow-md mb-6">
+        Contact Me
+      </h1>
+
+      <div class="flex justify-center">
+
+        <form action="https://formspree.io/f/YOUR_ID" method="POST"
+              class="w-full max-w-[400px] bg-white/20 backdrop-blur-md
+                     border border-white/30
+                     rounded-[16px]
+                     shadow-md
+                     p-6 flex flex-col gap-4">
+
+          <input type="text" name="name" placeholder="Your Name" required
+                 class="w-full h-[45px] px-3 rounded-xl border border-white/40 bg-white/70 outline-none">
+
+          <input type="email" name="email" placeholder="Your Email" required
+                 class="w-full h-[45px] px-3 rounded-xl border border-white/40 bg-white/70 outline-none">
+
+          <textarea name="message" placeholder="Your Message" required
+                    class="w-full h-[120px] p-3 rounded-xl border border-white/40 bg-white/70 outline-none resize-none"></textarea>
+
+          <button type="submit"
+                  class="bg-[#ff6f91] text-white py-2 rounded-xl font-semibold hover:bg-[#ff4f78] transition">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </main>
+
+  </div>
+</div>
+
 </body>
 </html>
