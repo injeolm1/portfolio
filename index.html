@@ -9,67 +9,103 @@
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center px-[25px] py-[15px] backdrop-blur-md border-b border-black/10">
-    <nav class="ml-auto flex gap-[15px] text-[25px]">
-      <a href="index.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Home
-      </a>
-      <a href="about.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        About Me
-      </a>
-      <a href="techs.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Tech Stack
-      </a>
-      <a href="certs.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Certifications
-      </a>
-      <a href="contacts.html"
-         class="no-underline text-[rgb(63,46,31)] px-3 py-1 rounded-[10px] transition duration-200
-                hover:bg-[rgba(201,162,39,0.15)] hover:text-[#ff6f91] hover:-translate-y-[2px]">
-        Contact
-      </a>
-    </nav>
+  <body class="bg-[rgb(247,244,248)] text-[#3e5f4f] font-serif text-[14px] leading-[18px]">
+<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
+
+<div class="w-[92%] max-w-[1100px] mx-auto my-[60px]
+            bg-white/10
+            backdrop-blur-xl backdrop-saturate-150
+            border border-white/25
+            rounded-[16px]
+            shadow-[0_0_70px_rgba(255,179,198,0.30)]
+            overflow-hidden flex flex-col">
+
+  <header class="h-[260px] bg-[#ffb3c6] flex items-center justify-center relative">
+
   </header>
 
-  <!-- Main -->
-  <main class="flex-1 w-[90%] max-w-[1000px] mx-auto mt-[100px] mb-[40px] p-[50px]
-               bg-[rgba(95,133,117,0.7)] backdrop-blur-md rounded-[20px]
-               text-center shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
+  <div class="flex flex-col md:flex-row">
 
-    <div class="flex flex-col items-center gap-4">
-      
-      <h1 class="text-[rgb(53,94,59)] bg-[rgb(255,171,171)] inline-block
-                 px-[20px] py-[9px] rounded-[50px]
-                 shadow-[0_6px_0_rgb(220,140,140),0_10px_18px_rgba(0,0,0,0.15)]
-                 -translate-y-[2px] text-2xl font-bold">
+    <aside class="w-full md:w-[260px] p-5
+                  bg-white/10 backdrop-blur-xl
+                  border-r md:border-r border-white/20">
+
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-4 border-b border-white/20 pb-2">
+        Navigation
+      </h2>
+
+      <nav class="flex flex-col gap-4">
+
+        <a href="index.html"
+           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
+                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Home
+        </a>
+
+        <a href="about.html"
+           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
+                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          About Me
+        </a>
+
+        <a href="techs.html"
+           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
+                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Tech Stack
+        </a>
+
+        <a href="certs.html"
+           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
+                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Certifications
+        </a>
+
+        <a href="contacts.html"
+           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
+                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+          Contact
+        </a>
+
+      </nav>
+
+    </aside>
+
+    <main class="flex-1 p-10 text-center bg-white/5 backdrop-blur-xl">
+
+      <h1 class="text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full
+                 shadow-md mb-6">
         Welcome to my portfolio!
       </h1>
 
-      <div>
-        <img src="icons/bgs/Pinalba.png"
-             alt="My Photo"
-             class="w-[250px] rounded-full border-[4px] border-white mx-auto">
+      <div class="flex flex-col items-center gap-4 mb-6">
+
+        <div class="w-[250px] h-[250px] rounded-full border-4 border-white
+                    overflow-hidden shadow-md bg-white/20 backdrop-blur-md flex items-center justify-center">
+
+          <img src="icons/bgs/Pinalba.png"
+               alt="Profile Photo"
+               class="w-full h-full object-cover">
+
+        </div>
+
       </div>
 
-      <h2 class="text-[rgb(53,94,59)] text-xl font-semibold">
+      <h2 class="text-lg font-semibold text-[#3e5f4f]">
         Anaiah Kyrie Pinalba
       </h2>
 
-      <p class="text-sm">
+      <p class="text-sm mt-2">
         BSIT Student • Future Developer • UI/UX Learner
       </p>
 
-    </div>
-  </main>
+    </main>
+
+  </div>
+
+</div>
+</body>
+
 
 </body>
 </html>
