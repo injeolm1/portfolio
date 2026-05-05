@@ -7,53 +7,143 @@
         <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
-    <div class="header">
+<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+            bg-white/10
+            backdrop-blur-xl backdrop-saturate-150
+            border border-white/25
+            rounded-[16px]
+            shadow-[0_0_70px_rgba(255,179,198,0.30)]
+            overflow-hidden flex flex-col">
 
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="techs.html">Tech Stack</a>
-            <a href="certs.html">Certifications</a>
-            <a href="contacts.html">Contact</a>
-        </nav>
-    </div>
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+          style="background-image: url('icons/bgs/bg1.png');">
+  </header>
 
-    <div class = "main">
-        <h1>My Tech Stack</h1>
+  <div class="flex flex-col md:flex-row">
 
-        <div class="tech-grid">
-    <div class="tech-item">
-        <img src="icons/techstack/html.png" alt="HTML">
-        <p>HTML</p>
-    </div>
+    <aside class="w-full md:w-[260px] p-4 md:p-5
+                  bg-white/10 backdrop-blur-xl
+                  border-b md:border-b-0 md:border-r border-white/20">
 
-    <div class="tech-item">
-        <img src="icons/techstack/css.png" alt="CSS">
-        <p>CSS</p>
-    </div>
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+        Navigation
+      </h2>
 
-    <div class="tech-item">
-        <img src="icons/techstack/js.png" alt="JavaScript">
-        <p>JavaScript</p>
-    </div>
+      <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
 
-    <div class="tech-item">
-        <img src="icons/techstack/c.png" alt="C Language">
-        <p>C</p>
-    </div>
+        <a href="index.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">Home</a>
+        <a href="about.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">About Me</a>
+        <a href="techs.html" class="bg-[#ff6f91] text-white text-center py-2 px-4 rounded-xl">Tech Stack</a>
+        <a href="certs.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">Certifications</a>
+        <a href="contacts.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">Contact</a>
 
-    <div class="tech-item">
-        <img src="icons/techstack/sql.png" alt="SQL">
-        <p>SQL</p>
-    </div>
+      </nav>
+    </aside>
 
-    <div class="tech-item">
-        <img src="icons/techstack/java.png" alt="Java">
-        <p>Java</p>
-    </div>
+    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
+                 shadow-md mb-8">
+        Tech Stack
+      </h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/techstack/html.png" class="w-full h-full object-contain" alt="HTML">
+          </div>
+          <p class="text-sm mt-2">HTML</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/techstack/css.png" class="w-full h-full object-contain" alt="CSS">
+          </div>
+          <p class="text-sm mt-2">CSS</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/techstack/js.png" class="w-full h-full object-contain" alt="JavaScript">
+          </div>
+          <p class="text-sm mt-2">JavaScript</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/techstack/c.png" class="w-full h-full object-contain" alt="C">
+          </div>
+          <p class="text-sm mt-2">C</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/techstack/sql.png" class="w-full h-full object-contain" alt="SQL">
+          </div>
+          <p class="text-sm mt-2">SQL</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/techstack/java.png" class="w-full h-full object-contain" alt="Java">
+          </div>
+          <p class="text-sm mt-2">Java</p>
+        </div>
+
+      </div>
+
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
+                 shadow-md mt-14 mb-8">
+        Dev Tools
+      </h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/tools/vscode.png" class="w-full h-full object-contain" alt="VS Code">
+          </div>
+          <p class="text-sm mt-2">VS Code</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/tools/git.png" class="w-full h-full object-contain" alt="Git">
+          </div>
+          <p class="text-sm mt-2">Git</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
+                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="icons/tools/github.png" class="w-full h-full object-contain" alt="GitHub">
+          </div>
+          <p class="text-sm mt-2">GitHub</p>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
 </div>
-  
+
+</body>
+</html>
+
 </body>
 </html>
