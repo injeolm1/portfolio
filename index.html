@@ -7,12 +7,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans">
-
-  <body class="bg-[rgb(247,244,248)] text-[#3e5f4f] font-serif text-[14px] leading-[18px]">
 <body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
-<div class="w-[92%] max-w-[1100px] mx-auto my-[60px]
+<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
             bg-white/10
             backdrop-blur-xl backdrop-saturate-150
             border border-white/25
@@ -20,49 +17,49 @@
             shadow-[0_0_70px_rgba(255,179,198,0.30)]
             overflow-hidden flex flex-col">
 
-  <header class="h-[260px] bg-[#ffb3c6] flex items-center justify-center relative">
-
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+          style="background-image: url('icons/bgs/bg1.png');">
   </header>
 
   <div class="flex flex-col md:flex-row">
 
-    <aside class="w-full md:w-[260px] p-5
+    <aside class="w-full md:w-[260px] p-4 md:p-5
                   bg-white/10 backdrop-blur-xl
-                  border-r md:border-r border-white/20">
+                  border-b md:border-b-0 md:border-r border-white/20">
 
-      <h2 class="text-lg font-bold text-[#ff6f91] mb-4 border-b border-white/20 pb-2">
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-4 border-b border-white/20 pb-2 text-center md:text-left">
         Navigation
       </h2>
 
-      <nav class="flex flex-col gap-4">
+      <nav class="flex flex-col gap-3 md:gap-4">
 
         <a href="index.html"
-           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
-                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Home
         </a>
 
         <a href="about.html"
-           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
-                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           About Me
         </a>
 
         <a href="techs.html"
-           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
-                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Tech Stack
         </a>
 
         <a href="certs.html"
-           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
-                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Certifications
         </a>
 
         <a href="contacts.html"
-           class="bg-[#ffb3c6] text-center py-3 rounded-xl text-[#3e5f4f]
-                  text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+           class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Contact
         </a>
 
@@ -70,17 +67,17 @@
 
     </aside>
 
-    <main class="flex-1 p-10 text-center bg-white/5 backdrop-blur-xl">
+    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
-      <h1 class="text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
                  shadow-md mb-6">
         Welcome to my portfolio!
       </h1>
 
       <div class="flex flex-col items-center gap-4 mb-6">
 
-        <div class="w-[250px] h-[250px] rounded-full border-4 border-white
+        <div class="w-[180px] h-[180px] md:w-[250px] md:h-[250px] rounded-full border-4 border-white
                     overflow-hidden shadow-md bg-white/20 backdrop-blur-md flex items-center justify-center">
 
           <img src="icons/bgs/Pinalba.png"
@@ -91,11 +88,11 @@
 
       </div>
 
-      <h2 class="text-lg font-semibold text-[#3e5f4f]">
+      <h2 class="text-base md:text-lg font-semibold text-[#3e5f4f]">
         Anaiah Kyrie Pinalba
       </h2>
 
-      <p class="text-sm mt-2">
+      <p class="text-xs md:text-sm mt-2">
         BSIT Student • Future Developer • UI/UX Learner
       </p>
 
@@ -104,7 +101,6 @@
   </div>
 
 </div>
-</body>
 
 
 </body>
