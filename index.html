@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+
 <body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
 <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
@@ -27,11 +28,19 @@
                   bg-white/10 backdrop-blur-xl
                   border-b md:border-b-0 md:border-r border-white/20">
 
-      <h2 class="text-lg font-bold text-[#ff6f91] mb-4 border-b border-white/20 pb-2 text-center md:text-left">
-        Navigation
-      </h2>
+      <div class="flex justify-between items-center md:block">
+        <h2 class="text-lg font-bold text-[#ff6f91] border-b border-white/20 pb-2">
+          Navigation
+        </h2>
 
-      <nav class="flex flex-col gap-3 md:gap-4">
+        <button onclick="toggleMenu()"
+                class="md:hidden bg-[#ffb3c6] px-3 py-2 rounded-lg text-sm">
+          Menu
+        </button>
+      </div>
+
+      <nav id="mobileMenu"
+           class="hidden md:flex flex-col gap-3 md:gap-4 mt-3 md:mt-0">
 
         <a href="index.html"
            class="bg-[#ffb3c6] text-center py-2 md:py-3 rounded-xl text-[#3e5f4f]
@@ -101,6 +110,13 @@
   </div>
 
 </div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+}
+</script> 
 
 
 </body>
