@@ -7,32 +7,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 flex flex-col min-h-screen bg-[url('icons/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
-     <div class="header">
+<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+            bg-white/10 backdrop-blur-xl backdrop-saturate-150
+            border border-white/25
+            rounded-[16px]
+            shadow-[0_0_70px_rgba(255,179,198,0.30)]
+            overflow-hidden flex flex-col">
 
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="techs.html">Tech Stack</a>
-            <a href="certs.html">Certifications</a>
-            <a href="contacts.html">Contact</a>
-        </nav>
-    </div>
+  <div class="flex flex-col md:flex-row">
 
-    <div class="main">
-        <h1>Certifications</h1>
+    <aside class="w-full md:w-[260px] p-4 md:p-5
+                  bg-white/10 backdrop-blur-xl
+                  border-b md:border-b-0 md:border-r border-white/20">
 
-        <div class="gallery">
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+        Navigation
+      </h2>
 
-    <div class="card">
-        <img src="icons/certs/Pinalba_Word.png" onclick="showImg(this)">
-        <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">Microsoft Word</a>
-    </div>
+      <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
 
+        <a href="index.html" class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">Home</a>
+        <a href="about.html" class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">About Me</a>
+        <a href="techs.html" class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">Tech Stack</a>
+        <a href="certs.html" class="bg-[#ff6f91] text-white py-2 px-4 rounded-xl text-center">Certifications</a>
+        <a href="contacts.html" class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">Contact</a>
+
+      </nav>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-8">
+        My Certifications
+      </h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl shadow-md">
+          <img src="icons/certs/Pinalba_Word.png"
+               class="w-full h-40 object-cover rounded-lg cursor-pointer transition hover:scale-105"
+               onclick="openModal(this.src)"
+               alt="Microsoft Word Certificate">
+
+          <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+             target="_blank"
+             class="block mt-3 text-[#ff6f91] font-semibold hover:underline">
+            Microsoft Word Certification
+          </a>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
 </div>
 
-    </div>
+<div id="modal"
+     class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+     onclick="closeModal()">
+
+  <img id="modalImg" class="max-w-[90%] max-h-[80%] rounded-lg shadow-lg">
+</div>
+
+<script>
+  function openModal(src) {
+    document.getElementById("modal").classList.remove("hidden");
+    document.getElementById("modalImg").src = src;
+  }
+
+  function closeModal() {
+    document.getElementById("modal").classList.add("hidden");
+  }
+</script>
 
 </body>
 </html>
