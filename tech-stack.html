@@ -25,18 +25,38 @@
 
     <aside class="w-full md:w-[260px] p-4 md:p-5
                   bg-white/10 backdrop-blur-xl
-                  border-b md:border-b-0 md:border-r border-white/20">
+                  border-b md:border-b-0 md:border-r border-white/20 relative">
 
-      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
-        Navigation
-      </h2>
+      <div class="flex items-center justify-between md:block">
+        <h2 class="text-lg font-bold text-[#ff6f91] mb-0 md:mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+          Navigation
+        </h2>
 
-      <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
+        <button onclick="toggleMenu()" class="md:hidden text-[#ff6f91] text-2xl">
+          ☰
+        </button>
+      </div>
+
+      <nav id="menu"
+           class="hidden md:flex flex-col gap-2 md:gap-4
+                  absolute md:static
+                  top-full left-0
+                  w-full md:w-auto
+                  bg-white/10 md:bg-transparent
+                  backdrop-blur-xl md:backdrop-blur-none
+                  border border-white/20 md:border-0
+                  rounded-xl md:rounded-none
+                  p-4 md:p-0
+                  z-50">
 
         <a href="index.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">Home</a>
+
         <a href="about.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">About</a>
+
         <a href="tech-stack.html" class="bg-[#ff6f91] text-white text-center py-2 px-4 rounded-xl">Tech Stack</a>
+
         <a href="certs.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">Certifications</a>
+
         <a href="contacts.html" class="bg-[#ffb3c6] text-center py-2 px-4 rounded-xl hover:bg-[#ff6f91] hover:text-white">Contact</a>
 
       </nav>
@@ -45,101 +65,89 @@
     <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
       <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
-                 shadow-md mb-8">
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full shadow-md mb-8">
         Tech Stack
       </h1>
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/techstack/html.png" class="w-full h-full object-contain" alt="HTML">
           </div>
           <p class="text-sm mt-2">HTML</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/techstack/css.png" class="w-full h-full object-contain" alt="CSS">
           </div>
           <p class="text-sm mt-2">CSS</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/techstack/js.png" class="w-full h-full object-contain" alt="JavaScript">
           </div>
           <p class="text-sm mt-2">JavaScript</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/techstack/c.png" class="w-full h-full object-contain" alt="C">
           </div>
           <p class="text-sm mt-2">C</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/techstack/java.png" class="w-full h-full object-contain" alt="Java">
           </div>
           <p class="text-sm mt-2">Java</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/techstack/sql.png" class="w-full h-full object-contain" alt="MySQL">
           </div>
           <p class="text-sm mt-2">MySQL</p>
         </div>
 
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="images/tools/postgresql.png" class="w-full h-full object-contain" alt="PostgreSQL">
+          </div>
+          <p class="text-sm mt-2">PostgreSQL</p>
+        </div>
+
       </div>
 
       <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
-                 shadow-md mt-14 mb-8">
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full shadow-md mt-14 mb-8">
         Dev Tools
       </h1>
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/tools/vscode.png" class="w-full h-full object-contain" alt="VS Code">
           </div>
           <p class="text-sm mt-2">VS Code</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/tools/git.png" class="w-full h-full object-contain" alt="Git">
           </div>
           <p class="text-sm mt-2">Git</p>
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
           <div class="w-12 h-12 flex items-center justify-center">
             <img src="images/tools/github.png" class="w-full h-full object-contain" alt="GitHub">
           </div>
           <p class="text-sm mt-2">GitHub</p>
-        </div>
-
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center
-                    transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,111,145,0.4)]">
-          <div class="w-12 h-12 flex items-center justify-center">
-            <img src="images/tools/postgresql.png" class="w-full h-full object-contain" alt="Postgresql">
-          </div>
-          <p class="text-sm mt-2">PostgreSQL</p>
         </div>
 
       </div>
@@ -150,8 +158,11 @@
 
 </div>
 
-</body>
-</html>
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("hidden");
+}
+</script>
 
 </body>
 </html>
