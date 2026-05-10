@@ -9,160 +9,134 @@
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
-    <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
-                bg-white/10 backdrop-blur-xl backdrop-saturate-150
-                border border-white/25 rounded-[16px]
-                shadow-[0_0_70px_rgba(255,179,198,0.30)]
-                overflow-hidden flex flex-col">
+<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+            bg-white/10
+            backdrop-blur-xl backdrop-saturate-150
+            border border-white/25
+            rounded-[16px]
+            shadow-[0_0_70px_rgba(255,179,198,0.30)]
+            overflow-hidden flex flex-col">
 
-        <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
-            style="background-image: url('images/bgs/bg1.png');">
-        </header>
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+          style="background-image: url('images/bgs/bg1.png');">
+  </header>
 
-        <div class="flex flex-col md:flex-row">
+  <div class="flex flex-col md:flex-row">
 
-            <aside class="w-full md:w-[260px] p-4 md:p-5
-                        bg-white/10 backdrop-blur-xl
-                        border-b md:border-b-0 md:border-r border-white/20">
+    <aside class="w-full md:w-[260px] p-4 md:p-5
+                  bg-white/10 backdrop-blur-xl
+                  border-b md:border-b-0 md:border-r border-white/20">
 
-                <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
-                    Navigation
-                </h2>
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+        Navigation
+      </h2>
 
-                <nav class="flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
+      <nav class="flex flex-wrap gap-2 md:flex-col md:gap-4 overflow-hidden">
 
-                    <a href="index.html"
-                        class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">
-                        Home
-                    </a>
+        <a href="index.html"
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+          Home
+        </a>
 
-                    <a href="about.html"
-                        class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">
-                        About
-                    </a>
+        <a href="about.html"
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+          About
+        </a>
 
-                    <a href="tech-stack.html"
-                        class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">
-                        Tech Stack
-                    </a>
+        <a href="tech-stack.html"
+           class="flex-1 md:flex-none text-center bg-[#ff6f91] text-white py-2 px-3 text-sm md:text-base rounded-xl">
+          Tech Stack
+        </a>
 
-                    <a href="certs.html"
-                        class="bg-[#ff6f91] text-white py-2 px-4 rounded-xl text-center">
-                        Certifications
-                    </a>
+        <a href="certs.html"
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+          Certifications
+        </a>
 
-                    <a href="contacts.html"
-                        class="bg-[#ffb3c6] py-2 px-4 rounded-xl text-center hover:bg-[#ff6f91] hover:text-white">
-                        Contact
-                    </a>
+        <a href="contacts.html"
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+          Contact
+        </a>
 
-                </nav>
-            </aside>
+      </nav>
+    </aside>
 
-            <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
-                <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
-                        bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-10">
-                    Certifications
-                </h1>
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full shadow-md mb-8">
+        Tech Stack
+      </h1>
 
-                <div class="flex justify-center flex-wrap gap-10">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
 
-                    <div class="w-[300px]
-                            rounded-xl overflow-hidden
-                            bg-white/10 backdrop-blur-md
-                            border border-white/20
-                            shadow-[0_0_25px_rgba(255,179,198,0.25)]
-                            transition duration-300 hover:-translate-y-2">
-
-                        <div class="p-4 flex items-center justify-center bg-white/5 min-h-[240px]">
-
-                            <img src="images/certs/Pinalba_Word.png"
-                                alt="Microsoft Word Certificate"
-                                onclick="openModal(this.src)"
-                                class="max-w-full max-h-[220px] object-contain
-                                       cursor-pointer transition duration-300 hover:scale-105">
-                        </div>
-
-                        <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
-                            target="_blank"
-                            class="block p-4 text-[#ff6f91]
-                                   bg-white/10 backdrop-blur-md
-                                   hover:bg-[#ffb3c6] hover:text-white
-                                   transition duration-300">
-
-                            <div class="font-bold text-base">
-                                Microsoft Office Specialist: Word Associate
-                            </div>
-
-                            <div class="text-[13px] opacity-80 mt-1">
-                                Microsoft • Certiport
-                            </div>
-
-                        </a>
-                    </div>
-
-                    <div class="w-[300px]
-                            rounded-xl overflow-hidden
-                            bg-white/10 backdrop-blur-md
-                            border border-white/20
-                            shadow-[0_0_25px_rgba(255,179,198,0.25)]
-                            transition duration-300 hover:-translate-y-2">
-
-                        <div class="p-4 flex items-center justify-center bg-white/5 min-h-[240px]">
-
-                            <img src="images/certs/Pinalba_Python.png"
-                                alt="Python Essentials 1"
-                                onclick="openModal(this.src)"
-                                class="max-w-full max-h-[220px] object-contain
-                                       cursor-pointer transition duration-300 hover:scale-105">
-                        </div>
-
-                        <a href="https://www.credly.com/badges/306a22a8-8fc4-4f3a-af35-c55faebba681"
-                            target="_blank"
-                            class="block p-4 text-[#ff6f91]
-                                   bg-white/10 backdrop-blur-md
-                                   hover:bg-[#ffb3c6] hover:text-white
-                                   transition duration-300">
-
-                            <div class="font-bold text-base">
-                                Python Essentials 1
-                            </div>
-
-                            <div class="text-[13px] opacity-80 mt-1">
-                                Cisco Networking Academy
-                            </div>
-
-                        </a>
-                    </div>
-
-                </div>
-
-            </main>
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/techstack/html.png" class="w-12 h-12 object-contain" alt="HTML">
+          <p class="text-sm mt-2">HTML</p>
         </div>
-    </div>
 
-    <div id="modal"
-        class="hidden fixed inset-0 z-[999]
-               bg-black/70 flex items-center justify-center p-4"
-        onclick="closeModal()">
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/techstack/css.png" class="w-12 h-12 object-contain" alt="CSS">
+          <p class="text-sm mt-2">CSS</p>
+        </div>
 
-        <img id="modalImg"
-            class="max-w-[90%] max-h-[90vh] rounded-xl shadow-2xl object-contain">
-    </div>
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/techstack/js.png" class="w-12 h-12 object-contain" alt="JavaScript">
+          <p class="text-sm mt-2">JavaScript</p>
+        </div>
 
-    <script>
-        function openModal(src) {
-            document.getElementById("modal").classList.remove("hidden");
-            document.getElementById("modalImg").src = src;
-        }
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/techstack/c.png" class="w-12 h-12 object-contain" alt="C">
+          <p class="text-sm mt-2">C</p>
+        </div>
 
-        function closeModal() {
-            document.getElementById("modal").classList.add("hidden");
-        }
-    </script>
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/techstack/java.png" class="w-12 h-12 object-contain" alt="Java">
+          <p class="text-sm mt-2">Java</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/techstack/sql.png" class="w-12 h-12 object-contain" alt="MySQL">
+          <p class="text-sm mt-2">MySQL</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/tools/postgresql.png" class="w-12 h-12 object-contain" alt="PostgreSQL">
+          <p class="text-sm mt-2">PostgreSQL</p>
+        </div>
+
+      </div>
+
+      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full shadow-md mt-14 mb-8">
+        Dev Tools
+      </h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/tools/vscode.png" class="w-12 h-12 object-contain" alt="VS Code">
+          <p class="text-sm mt-2">VS Code</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/tools/git.png" class="w-12 h-12 object-contain" alt="Git">
+          <p class="text-sm mt-2">Git</p>
+        </div>
+
+        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
+          <img src="images/tools/github.png" class="w-12 h-12 object-contain" alt="GitHub">
+          <p class="text-sm mt-2">GitHub</p>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
 
 </body>
-
 </html>
 
