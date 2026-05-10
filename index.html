@@ -1,15 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anaiah Kyrie Pinalba | Web Portfolio</title>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaiah Kyrie Pinalba | Web Portfolio</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+     rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Coiny&display=swap" rel="stylesheet">
+
+  <style>
+    .coiny-regular {
+      font-family: "Coiny", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .gwendolyn-bold {
+      font-family: "Gwendolyn", cursive;
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
@@ -30,40 +45,34 @@
                   bg-white/10 backdrop-blur-xl
                   border-b md:border-b-0 md:border-r border-white/20">
 
-      <button id="menu-btn"
-              class="md:hidden w-full bg-[#ff6f91] text-white py-2 rounded-xl mb-3">
-        ☰ Menu
-      </button>
-
-      <nav id="mobile-menu"
-           class="hidden md:flex md:flex-col gap-2 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap pb-2 md:pb-0">
+      <nav class="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4">
 
         <a href="index.html"
-           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Home
         </a>
 
         <a href="about.html"
-           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           About
         </a>
 
         <a href="tech-stack.html"
-           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Tech Stack
         </a>
 
         <a href="certs.html"
-           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Certifications
         </a>
 
         <a href="contacts.html"
-           class="flex-shrink-0 md:flex-shrink bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+           class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
                   text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Contact
         </a>
@@ -73,9 +82,8 @@
 
     <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
-      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-8"
-          style="font-family: 'Tangerine', cursive;">
+      <h1 class="coiny-regular text-lg md:text-xl font-bold text-[#ff6f91]
+                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-8">
         Welcome to My Portfolio!
       </h1>
 
@@ -93,7 +101,7 @@
 
       </div>
 
-      <h2 class="text-base md:text-lg font-semibold text-[#3e5f4f]">
+      <h2 class="gwendolyn-bold text-2xl md:text-3xl text-[#3e5f4f]">
         Anaiah Kyrie Pinalba
       </h2>
 
@@ -106,14 +114,5 @@
   </div>
 </div>
 
-<script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>
-
 </body>
-</html>
+  </html>
