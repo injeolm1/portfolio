@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anaiah Kyrie Pinalba | Certifications</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Henny+Penny&family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+
+  <style>
+    .playfair { font-family: "Playfair Display", serif; }
+    .croissant { font-family: "Croissant One", serif; }
+  </style>
 </head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/bg1.png')] bg-cover bg-fixed font-sans text-[#3e5f4f]">
 
 <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
-            bg-white/10
-            backdrop-blur-xl backdrop-saturate-150
-            border border-white/25
-            rounded-[16px]
+            bg-white/10 backdrop-blur-xl backdrop-saturate-150
+            border border-white/25 rounded-[16px]
             shadow-[0_0_70px_rgba(255,179,198,0.30)]
             overflow-hidden flex flex-col">
 
-  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center bg-cover bg-center"
           style="background-image: url('images/bgs/bg1.png');">
   </header>
 
@@ -27,34 +34,34 @@
                   bg-white/10 backdrop-blur-xl
                   border-b md:border-b-0 md:border-r border-white/20">
 
-      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left">
+      <h2 class="text-lg font-bold text-[#ff6f91] mb-3 border-b border-white/20 pb-2 text-center md:text-left playfair">
         Navigation
       </h2>
 
-      <nav class="flex flex-wrap gap-2 md:flex-col md:gap-4 overflow-hidden">
+      <nav class="flex flex-wrap gap-2 md:flex-col md:gap-4">
 
         <a href="index.html"
-           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 rounded-xl hover:bg-[#ff6f91] hover:text-white croissant">
           Home
         </a>
 
         <a href="about.html"
-           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 rounded-xl hover:bg-[#ff6f91] hover:text-white croissant">
           About
         </a>
 
         <a href="tech-stack.html"
-           class="flex-1 md:flex-none text-center bg-[#ff6f91] text-white py-2 px-3 text-sm md:text-base rounded-xl">
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 rounded-xl hover:bg-[#ff6f91] hover:text-white croissant">
           Tech Stack
         </a>
 
         <a href="certs.html"
-           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+           class="flex-1 md:flex-none text-center bg-[#ff6f91] text-white py-2 px-3 rounded-xl croissant">
           Certifications
         </a>
 
         <a href="contacts.html"
-           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 text-sm md:text-base rounded-xl hover:bg-[#ff6f91] hover:text-white">
+           class="flex-1 md:flex-none text-center bg-[#ffb3c6] py-2 px-3 rounded-xl hover:bg-[#ff6f91] hover:text-white croissant">
           Contact
         </a>
 
@@ -64,69 +71,44 @@
     <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
       <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full shadow-md mb-8">
-        Tech Stack
+                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-10 playfair">
+        Certifications
       </h1>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
+      <div class="flex flex-wrap justify-center gap-8">
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/techstack/html.png" class="w-12 h-12 object-contain" alt="HTML">
-          <p class="text-sm mt-2">HTML</p>
+        <div class="w-[280px] md:w-[320px] bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+          <img src="images/certs/Pinalba_Word.png"
+               class="w-full h-[200px] object-contain bg-white/10"
+               alt="Word Certificate">
+
+          <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+             target="_blank"
+             class="block p-4 hover:bg-[#ffb3c6] hover:text-white transition">
+
+            <div class="font-bold">Microsoft Word Certification</div>
+            <div class="text-sm opacity-80">Certiport</div>
+
+          </a>
+
         </div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/techstack/css.png" class="w-12 h-12 object-contain" alt="CSS">
-          <p class="text-sm mt-2">CSS</p>
-        </div>
+        <div class="w-[280px] md:w-[320px] bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/techstack/js.png" class="w-12 h-12 object-contain" alt="JavaScript">
-          <p class="text-sm mt-2">JavaScript</p>
-        </div>
+          <img src="images/certs/Pinalba_Python.png"
+               class="w-full h-[200px] object-contain bg-white/10"
+               alt="Python Certificate">
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/techstack/c.png" class="w-12 h-12 object-contain" alt="C">
-          <p class="text-sm mt-2">C</p>
-        </div>
+          <a href="https://www.credly.com/badges/306a22a8-8fc4-4f3a-af35-c55faebba681"
+             target="_blank"
+             class="block p-4 hover:bg-[#ffb3c6] hover:text-white transition">
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/techstack/java.png" class="w-12 h-12 object-contain" alt="Java">
-          <p class="text-sm mt-2">Java</p>
-        </div>
+            <div class="font-bold">Python Essentials 1</div>
+            <div class="text-sm opacity-80">Cisco Networking Academy</div>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/techstack/sql.png" class="w-12 h-12 object-contain" alt="MySQL">
-          <p class="text-sm mt-2">MySQL</p>
-        </div>
+          </a>
 
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/tools/postgresql.png" class="w-12 h-12 object-contain" alt="PostgreSQL">
-          <p class="text-sm mt-2">PostgreSQL</p>
-        </div>
-
-      </div>
-
-      <h1 class="text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full shadow-md mt-14 mb-8">
-        Dev Tools
-      </h1>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
-
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/tools/vscode.png" class="w-12 h-12 object-contain" alt="VS Code">
-          <p class="text-sm mt-2">VS Code</p>
-        </div>
-
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/tools/git.png" class="w-12 h-12 object-contain" alt="Git">
-          <p class="text-sm mt-2">Git</p>
-        </div>
-
-        <div class="bg-white/10 rounded-xl p-4 border border-white/20 flex flex-col items-center transition duration-300 hover:scale-105">
-          <img src="images/tools/github.png" class="w-12 h-12 object-contain" alt="GitHub">
-          <p class="text-sm mt-2">GitHub</p>
         </div>
 
       </div>
