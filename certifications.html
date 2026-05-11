@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact me | Anaiah Kyrie Pinalba</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-
+    <title>Certifications | Anaiah Kyrie Pinalba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
@@ -16,10 +16,8 @@
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/stripebg.png')] bg-repeat bg-left-top bg-fixed font-sans text-[#3e5f4f]">
 <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
-            bg-white/10
-            backdrop-blur-xl backdrop-saturate-150
-            border border-white/25
-            rounded-[16px]
+            bg-white/10 backdrop-blur-xl backdrop-saturate-150
+            border border-white/25 rounded-[16px]
             shadow-[0_0_70px_rgba(255,179,198,0.30)]
             overflow-hidden flex flex-col">
 
@@ -54,13 +52,13 @@
         </a>
 
         <a href="certifications.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
+           class="coiny-regular bg-[#ff6f91] text-white text-center py-2 px-4 md:py-3 rounded-xl">
           Certifications
         </a>
 
         <a href="contacts.html"
-           class="coiny-regular bg-[#ff6f91] text-white text-center py-2 px-4 md:py-3 rounded-xl">
+           class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white">
           Contact Me
         </a>
 
@@ -70,35 +68,45 @@
     <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
       <h1 class="coiny-regular text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
-                 shadow-md mb-6">
-        Contact Me
+                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-10">
+        Certifications
       </h1>
 
-      <div class="flex justify-center">
+      <div class="flex flex-col items-center gap-8 max-w-[700px] mx-auto">
 
-        <form action="https://formspree.io/f/mkoybwnl" method="POST"
-              class="w-full max-w-[400px] bg-white/20 backdrop-blur-md
-                     border border-white/30
-                     rounded-[16px]
-                     shadow-md
-                     p-6 flex flex-col gap-4">
+        <div class="w-full bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
 
-          <input type="text" name="name" placeholder="Your Name" required
-                 class="w-full h-[45px] px-3 rounded-xl border border-white/40 bg-white/70 outline-none">
+          <img src="images/certs/Pinalba_Word.png"
+               class="w-full h-[320px] object-contain bg-white/10"
+               alt="Word Certificate">
 
-          <input type="email" name="email" placeholder="Your Email" required
-                 class="w-full h-[45px] px-3 rounded-xl border border-white/40 bg-white/70 outline-none">
+          <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+             target="_blank"
+             class="block p-5 hover:bg-[#ffb3c6] hover:text-white transition">
 
-          <textarea name="message" placeholder="Your Message" required
-                    class="w-full h-[120px] p-3 rounded-xl border border-white/40 bg-white/70 outline-none resize-none"></textarea>
+            <div class="font-bold text-lg">Microsoft Word Certification</div>
+            <div class="text-sm opacity-80">Certiport</div>
 
-          <button type="submit"
-                  class="bg-[#ff6f91] text-white py-2 rounded-xl font-semibold hover:bg-[#ff4f78] transition">
-            Send Message
-          </button>
+          </a>
 
-        </form>
+        </div>
+
+        <div class="w-full bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+          <img src="images/certs/Pinalba_Python.png"
+               class="w-full h-[320px] object-contain bg-white/10"
+               alt="Python Certificate">
+
+          <a href="https://www.credly.com/badges/306a22a8-8fc4-4f3a-af35-c55faebba681"
+             target="_blank"
+             class="block p-5 hover:bg-[#ffb3c6] hover:text-white transition">
+
+            <div class="font-bold text-lg">Python Essentials 1</div>
+            <div class="text-sm opacity-80">Cisco Networking Academy</div>
+
+          </a>
+
+        </div>
 
       </div>
 
@@ -110,3 +118,4 @@
 
 </body>
 </html>
+
