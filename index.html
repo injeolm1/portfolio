@@ -3,33 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Anaiah Kyrie Pinalba</title>
+    <title>Anaiah Kyrie Pinalba | Home</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link srel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Coiny&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    .coiny-regular {
+      font-family: "Coiny", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
 
+    .gwendolyn-bold {
+      font-family: "Gwendolyn", cursive;
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/stripebg.png')] bg-repeat bg-left-top bg-fixed font-sans text-[#3e5f4f]">
+
 <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
             bg-white/10 backdrop-blur-xl backdrop-saturate-150
             border border-white/25 rounded-[16px]
             shadow-[0_0_70px_rgba(255,179,198,0.30)]
             overflow-hidden flex flex-col">
 
-            <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover"
-            style="background-image: url('images/bgs/bg1.png');">
-    </header>
+  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover bg-center"
+          style="background-image: url('images/bgs/bg1.png');">
+  </header>
 
   <div class="flex flex-col md:flex-row">
 
-    <aside class="w-full md:w-[260px] p-4 md:p-5
+    <!-- MOBILE HAMBURGER -->
+    <div class="md:hidden flex justify-end p-4 bg-white/10 backdrop-blur-xl border-b border-white/20">
+      
+      <button id="menuBtn"
+              class="text-3xl text-[#ff6f91]">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside id="mobileMenu"
+           class="hidden md:block w-full md:w-[260px] p-4 md:p-5
                   bg-white/10 backdrop-blur-xl
                   border-b md:border-b-0 md:border-r border-white/20">
 
@@ -136,6 +160,8 @@
 
   </div>
 </div>
+
+<script src="index.js"> </script>
 
 </body>
   </html>
