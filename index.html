@@ -9,41 +9,31 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Coiny&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    .coiny-regular {
-      font-family: "Coiny", system-ui;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    .gwendolyn-bold {
-      font-family: "Gwendolyn", cursive;
-      font-weight: 700;
-      font-style: normal;
-    }
-  </style>
 </head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/stripebg.png')] bg-repeat bg-left-top bg-fixed font-sans text-[#3e5f4f]">
 
   <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
-              bg-white/10 backdrop-blur-xl backdrop-saturate-150
-              border border-white/25 rounded-[16px]
+              bg-white/10
+              backdrop-blur-xl backdrop-saturate-150
+              border border-white/25
+              rounded-[16px]
               shadow-[0_0_70px_rgba(255,179,198,0.30)]
               overflow-hidden flex flex-col">
 
-    <header class="h-[180px] md:h-[260px] bg-cover bg-center bg-fixed transition duration-500 hover:scale-[1.02] hover:brightness-110"
+    <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover"
             style="background-image: url('images/bgs/bg1.png');">
     </header>
 
     <div class="flex flex-col md:flex-row">
 
       <div class="md:hidden flex justify-end p-4 bg-white/10 backdrop-blur-xl border-b border-white/20">
-        <button id="menuBtn" class="text-3xl text-[#ff6f91]">☰</button>
+        <button id="menuBtn" class="text-3xl text-[#ff6f91]">
+          ☰
+        </button>
       </div>
 
       <aside id="mobileMenu"
@@ -78,17 +68,15 @@
           </a>
 
           <a href="contacts.html"
-             class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6]
-                    text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                    text-[14px] md:text-[16px] transition
-                    hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+             class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
             Contact Me
           </a>
 
         </nav>
       </aside>
 
-      <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+       <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
 
         <h1 class="coiny-regular text-lg md:text-xl font-bold text-[#ff6f91]
                    bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-8">
