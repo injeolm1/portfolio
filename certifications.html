@@ -1,162 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications | Anaiah Kyrie Pinalba</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Anaiah Kyrie Pinalba</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/stripebg.png')] bg-repeat bg-left-top bg-fixed font-sans text-[#3e5f4f]">
 
-<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
-            bg-white/10 backdrop-blur-xl backdrop-saturate-150
-            border border-white/25 rounded-[16px]
-            shadow-[0_0_70px_rgba(255,179,198,0.30)]
-            overflow-hidden flex flex-col">
+  <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+              bg-white/10 backdrop-blur-xl backdrop-saturate-150
+              border border-white/25 rounded-[16px]
+              shadow-[0_0_70px_rgba(255,179,198,0.30)]
+              overflow-hidden flex flex-col">
 
-  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover"
-          style="background-image: url('images/bgs/bg1.png');">
-  </header>
+    <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover"
+            style="background-image: url('images/bgs/bg1.png');">
+    </header>
 
-  <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row">
 
-    <div class="md:hidden flex justify-end p-4 bg-white/10 backdrop-blur-xl border-b border-white/20">
+      <div class="md:hidden flex justify-end p-4 bg-white/10 backdrop-blur-xl border-b border-white/20">
+        <button id="menuBtn" class="text-3xl text-[#ff6f91]">
+          ☰
+        </button>
+      </div>
 
-      <button id="menuBtn"
-              class="text-3xl text-[#ff6f91]">
-        ☰
-      </button>
+      <aside id="mobileMenu"
+             class="hidden md:block w-full md:w-[260px] p-4 md:p-5
+                    bg-white/10 backdrop-blur-xl
+                    border-b md:border-b-0 md:border-r border-white/20">
+
+        <nav class="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4">
+
+          <a href="index.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Home
+          </a>
+
+          <a href="about.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            About
+          </a>
+
+          <a href="tech-stack.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Tech Stack
+          </a>
+
+          <a href="certifications.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Certifications
+          </a>
+
+          <a href="contacts.html"
+             class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6]
+                    text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition
+                    hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Contact Me
+          </a>
+
+        </nav>
+      </aside>
+
+      <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
+
+        <h1 class="coiny-regular text-lg md:text-xl font-bold text-[#ff6f91]
+                   bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-10">
+          Certifications
+        </h1>
+
+        <div class="flex flex-col items-center gap-8 max-w-[700px] mx-auto">
+
+          <div class="w-full bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+            <img src="images/certs/Pinalba_Word.png"
+                 class="w-full h-[320px] object-contain bg-white/10 cursor-pointer"
+                 alt="Word Certificate"
+                 onclick="openModal(this.src)">
+
+            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+               target="_blank"
+               class="block p-5 hover:bg-[#ffb3c6] hover:text-white transition">
+
+              <div class="font-bold text-lg">
+                Microsoft Word Certification
+              </div>
+
+              <div class="text-sm opacity-80">
+                Certiport
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="w-full bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+            <img src="images/certs/Pinalba_Python.png"
+                 class="w-full h-[320px] object-contain bg-white/10 cursor-pointer"
+                 alt="Python Certificate"
+                 onclick="openModal(this.src)">
+
+            <a href="https://www.credly.com/badges/306a22a8-8fc4-4f3a-af35-c55faebba681"
+               target="_blank"
+               class="block p-5 hover:bg-[#ffb3c6] hover:text-white transition">
+
+              <div class="font-bold text-lg">
+                Python Essentials 1
+              </div>
+
+              <div class="text-sm opacity-80">
+                Cisco Networking Academy
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </main>
 
     </div>
 
-    <aside id="mobileMenu"
-           class="hidden md:block w-full md:w-[260px] p-4 md:p-5
-                  bg-white/10 backdrop-blur-xl
-                  border-b md:border-b-0 md:border-r border-white/20">
+  </div>
 
-      <nav class="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4">
+  <div id="imageModal"
+       class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
 
-        <a href="index.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Home
-        </a>
+    <button onclick="closeModal()"
+            class="absolute top-5 right-5 text-white text-5xl hover:text-[#ffb3c6]">
+      &times;
+    </button>
 
-        <a href="about.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          About
-        </a>
-
-        <a href="tech-stack.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Tech Stack
-        </a>
-
-        <a href="certifications.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Certifications
-        </a>
-
-        <a href="contacts.html"
-           class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6]
-                  text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition
-                  hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Contact Me
-        </a>
-
-      </nav>
-    </aside>
-
-    <main class="flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl">
-
-      <h1 class="coiny-regular text-lg md:text-xl font-bold text-[#ff6f91]
-                 bg-[#ffb3c6] inline-block px-6 py-3 rounded-full shadow-md mb-10">
-        Certifications
-      </h1>
-
-      <div class="flex flex-col items-center gap-8 max-w-[700px] mx-auto">
-
-        <div class="w-full bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
-
-          <img src="images/certs/Pinalba_Word.png"
-               class="w-full h-[320px] object-contain bg-white/10 cursor-pointer"
-               alt="Word Certificate"
-               onclick="openModal(this.src)">
-
-          <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
-             target="_blank"
-             class="block p-5 hover:bg-[#ffb3c6] hover:text-white transition">
-
-            <div class="font-bold text-lg">
-              Microsoft Word Certification
-            </div>
-
-            <div class="text-sm opacity-80">
-              Certiport
-            </div>
-
-          </a>
-
-        </div>
-
-        <div class="w-full bg-white/10 border border-white/20 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
-
-          <img src="images/certs/Pinalba_Python.png"
-               class="w-full h-[320px] object-contain bg-white/10 cursor-pointer"
-               alt="Python Certificate"
-               onclick="openModal(this.src)">
-
-          <a href="https://www.credly.com/badges/306a22a8-8fc4-4f3a-af35-c55faebba681"
-             target="_blank"
-             class="block p-5 hover:bg-[#ffb3c6] hover:text-white transition">
-
-            <div class="font-bold text-lg">
-              Python Essentials 1
-            </div>
-
-            <div class="text-sm opacity-80">
-              Cisco Networking Academy
-            </div>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </main>
+    <img id="modalImage"
+         class="max-w-full max-h-full rounded-xl border-4 border-white shadow-2xl">
 
   </div>
 
-</div>
-
-<div id="imageModal"
-     class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
-
-  <button onclick="closeModal()"
-          class="absolute top-5 right-5 text-white text-5xl hover:text-[#ffb3c6]">
-    &times;
-  </button>
-
-  <img id="modalImage"
-       class="max-w-full max-h-full rounded-xl border-4 border-white shadow-2xl">
-
-</div>
-
-<script src="index.js"></script>
+  <script src="index.js"></script>
 
 </body>
 </html>
-

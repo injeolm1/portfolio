@@ -4,107 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Anaiah Kyrie Pinalba</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 
-
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="m-0 flex flex-col min-h-screen bg-[url('images/bgs/stripebg.png')] bg-repeat bg-left-top bg-fixed font-sans text-[#3e5f4f]">
 
-<div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
-            bg-white/10 backdrop-blur-xl backdrop-saturate-150
-            border border-white/25 rounded-[16px]
-            shadow-[0_0_70px_rgba(255,179,198,0.30)]
-            overflow-hidden flex flex-col">
+  <div class="w-[92%] max-w-[1100px] mx-auto my-10 md:my-[60px]
+              bg-white/10 backdrop-blur-xl backdrop-saturate-150
+              border border-white/25 rounded-[16px]
+              shadow-[0_0_70px_rgba(255,179,198,0.30)]
+              overflow-hidden flex flex-col">
 
-  <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover"
-          style="background-image: url('images/bgs/bg1.png');">
-  </header>
+    <header class="h-[180px] md:h-[260px] flex items-center justify-center relative bg-cover"
+            style="background-image: url('images/bgs/bg1.png');">
+    </header>
 
-  <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row">
 
-    <div class="md:hidden flex justify-end p-4 bg-white/10 backdrop-blur-xl border-b border-white/20">
+      <div class="md:hidden flex justify-end p-4 bg-white/10 backdrop-blur-xl border-b border-white/20">
+        <button id="menuBtn" class="text-3xl text-[#ff6f91]">
+          ☰
+        </button>
+      </div>
 
-      <button id="menuBtn"
-              class="text-3xl text-[#ff6f91]">
-        ☰
-      </button>
+      <aside id="mobileMenu"
+             class="hidden md:block w-full md:w-[260px] p-4 md:p-5
+                    bg-white/10 backdrop-blur-xl
+                    border-b md:border-b-0 md:border-r border-white/20">
 
-    </div>
+        <nav class="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4">
 
-    <aside id="mobileMenu"
-           class="hidden md:block w-full md:w-[260px] p-4 md:p-5
-                  bg-white/10 backdrop-blur-xl
-                  border-b md:border-b-0 md:border-r border-white/20">
+          <a href="index.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Home
+          </a>
 
-      <nav class="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4">
+          <a href="about.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            About
+          </a>
 
-        <a href="index.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Home
-        </a>
+          <a href="tech-stack.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Tech Stack
+          </a>
 
-        <a href="about.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          About
-        </a>
+          <a href="certifications.html"
+             class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Certifications
+          </a>
 
-        <a href="tech-stack.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Tech Stack
-        </a>
+          <a href="contacts.html"
+             class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6]
+                    text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
+                    text-[14px] md:text-[16px] transition
+                    hover:bg-[#ff6f91] hover:text-white hover:scale-105">
+            Contact Me
+          </a>
 
-        <a href="certifications.html"
-           class="coiny-regular bg-[#ffb3c6] text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Certifications
-        </a>
+        </nav>
+      </aside>
 
-        <a href="contacts.html"
-           class="coiny-regular col-span-2 md:col-span-1 bg-[#ffb3c6]
-                  text-center py-2 px-4 md:py-3 rounded-xl text-[#3e5f4f]
-                  text-[14px] md:text-[16px] transition
-                  hover:bg-[#ff6f91] hover:text-white hover:scale-105">
-          Contact Me
-        </a>
-
-      </nav>
-    </aside>
-  
       <main class="relative flex-1 p-6 md:p-10 text-center bg-white/5 backdrop-blur-xl overflow-hidden">
-  
+
         <h1 class="coiny-regular text-lg md:text-xl font-bold text-[#ff6f91]
                    bg-[#ffb3c6] inline-block px-5 md:px-6 py-2 md:py-3 rounded-full
                    shadow-md mb-6">
           About
         </h1>
-  
+
         <div class="max-w-[750px] mx-auto text-center">
-  
+
           <p class="mb-4 text-sm md:text-base leading-relaxed">
             I enjoy creativity and anything visually interesting, and I like finding simple ways to express ideas. I am a 2nd year BSIT student with experience in C programming, HTML, CSS, Java, and basic database concepts. I like learning by doing and practicing.
           </p>
-  
+
           <p class="mb-4 text-sm md:text-base leading-relaxed">
             In the future, I aim to work and find my path in the IT field. I hope to bring creativity into the projects I work on while continuing to improve my skills. I am open to learning, gaining experience, and exploring internship opportunities. I want to keep growing in a way that is both meaningful and nice.
           </p>
-  
+
         </div>
-  
+
       </main>
-  
+
     </div>
-  
+
   </div>
-  
-  </body>
-  
+
+  <script src="index.js"></script>
+
+</body>
 </html>
